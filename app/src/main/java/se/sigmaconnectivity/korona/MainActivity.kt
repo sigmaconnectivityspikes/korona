@@ -2,6 +2,7 @@ package se.sigmaconnectivity.korona
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         initView()
     }
 
-    private fun initView() {}
+    private fun initView() {
+        infectedConfirmButton.setOnClickListener {
+            mainViewModel.onHashIdSet(infectedInput.text.toString())
+        }
+    }
 }
