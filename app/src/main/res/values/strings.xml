@@ -1,8 +1,4 @@
 <resources>
-    <string name="app_name">BleScanner</string>
-
-    <!--  Notifications  -->
-    <string name="notification_channel_name">KoronaLokalizator notifications</string>
-    <string name="notification_content">Services status:\nScanning: %1$s\nAdvertising: %2$s</string>
+    <string name="app_name">Korona</string>
     <string name="infected_hash">Infected hash</string>
 </resources>

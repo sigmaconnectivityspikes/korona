@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("se.sigmaconnectivity.blescanner.data.test", appContext.packageName)
+        assertEquals("se.sigmaconnectivity.korona.data.test", appContext.packageName)
     }
 }
