@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Korona</string>
     <string name="infected_hash">Infected hash</string>
+    <string name="apply">Apply</string>
 </resources>

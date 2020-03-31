@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private fun initView() {
         infectedConfirmButton.setOnClickListener {
             mainViewModel.onHashIdSet(infectedInput.text.toString())
+            infectedInput.setText("")
         }
     }
 }
