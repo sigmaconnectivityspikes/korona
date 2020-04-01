@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "se.sigmaconnectivity.korona"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -23,6 +23,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
 }
@@ -51,6 +56,9 @@ dependencies {
 
     //RxAndroidBle
     implementation "com.polidea.rxandroidble2:rxandroidble:1.11.0"
+
+    //QR codes
+    implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
 
     //Firebase
     implementation 'com.google.firebase:firebase-core:17.2.3'
