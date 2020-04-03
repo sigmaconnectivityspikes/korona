@@ -12,7 +12,6 @@ class InfectionRepositoryImpl(private val fireStore: FirebaseFirestore) : Infect
         // change Completable.create since it is a RxJava
         fireStore.collection("infections")
             .add(infection.domainToDb()).addOnCompleteListener { task ->
-                Timber.d("WNASILOWSKILOG task $task")
                 if (!emitter.isDisposed) {
                     if (task.isSuccessful)
                         emitter.onComplete()
